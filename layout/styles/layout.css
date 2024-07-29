@@ -1,0 +1,1204 @@
+@charset "utf-8";
+
+@import url("fontawesome-free/css/all.css");
+@import url("framework.css");
+
+/* Top Bar
+--------------------------------------------------------------------------------------------------------------- */
+#topbar1 {
+  width: 100px;
+  height: 70px;
+  padding: 20px 20px;
+  float: left;
+  left: 0px;
+  display: flex;
+  padding-left: 40px;
+  margin-right: -10px;
+}
+
+#topbar2 {
+  left: 0px;
+  padding: 10px 10px;
+  padding-left: 50px;
+  font-size: 10px;
+}
+
+#topbar {
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+#topbar ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+#topbar ul li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
+}
+
+#topbar i {
+  line-height: normal;
+}
+
+/* Search Form */
+#topbar #searchform {
+  position: relative;
+  line-height: 1;
+  z-index: 9999;
+}
+
+#topbar #searchform::after {
+  display: block;
+  height: 18px;
+  line-height: 18px;
+  padding: 0;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f002"
+    /* fa-search */
+  ;
+}
+
+#topbar #searchform:hover::after,
+#topbar #searchform button {
+  cursor: pointer;
+}
+
+#topbar #searchform>div {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 280px;
+  visibility: hidden;
+  opacity: 0
+    /* Required for transition effect */
+  ;
+}
+
+#topbar #searchform:hover>div {
+  visibility: visible;
+  opacity: 1;
+  /* Required for transition effect */
+}
+
+#topbar #searchform form {
+  display: block;
+  position: relative;
+}
+
+#topbar #searchform form * {
+  border: none;
+}
+
+#topbar #searchform input {
+  display: block;
+  width: 100%;
+  height: 36px;
+  padding: 8px 40px 8px 10px;
+  font-size: 1rem;
+}
+
+#topbar #searchform ::placeholder {
+  text-transform: capitalize;
+}
+
+#topbar #searchform button {
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 2px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Contact Details
+--------------------------------------------------------------------------------------------------------------- */
+#ctdetails {
+  padding: 30px 0;
+}
+
+#ctdetails ul li div {
+  position: relative;
+  min-height: 45px;
+  padding: 0 0 0 60px;
+  line-height: 1;
+  word-wrap: break-word;
+}
+
+#ctdetails ul li div i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+#ctdetails ul li div span {
+  display: block;
+  padding: 4px 0 0 0;
+}
+
+#ctdetails ul li div strong {
+  display: block;
+  margin: 0 0 8px 0;
+}
+
+#ctdetails div:last-child {
+  margin-bottom: 0;
+}
+
+/* Used when elements stack in small viewports */
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+.padtop {
+  padding: 80px 0 0 0;
+}
+
+#header {
+  padding: 0 30px;
+}
+
+#header #logo {
+  margin: 22px 0 0 0;
+}
+
+#header #logo h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-variant: small-caps;
+}
+
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro {
+  padding: 200px 0;
+}
+
+#pageintro #fac {
+  display: block;
+  max-width: 60%;
+  text-transform: capitalize;
+  text-align: center;
+  padding-left: 400px;
+  font-size: 25px;
+}
+
+#pageintro .heading {
+  font-size: 70px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#carrousel {
+  width: 800px;
+  height: 500px;
+  border: 4px black;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  margin: 2rem auto;
+}
+
+
+
+#container {
+  width: 2000px;
+  height: 100px;
+}
+
+.photo {
+  width: 800px;
+  height: 500px;
+  margin: 0;
+  display: inline-block;
+  background-size: cover;
+}
+
+.boutton {
+  position: absolute;
+  width: 70px;
+  cursor: pointer;
+  top: 200px;
+  margin-left: 100px;
+}
+
+#g {
+  left: 5px;
+  opacity: 0.4;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+
+}
+
+#d {
+  right: 0;
+  opacity: 0.4;
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+
+#g:hover {
+  transform: rotate(0deg) scale(1.1);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+#d:hover {
+  transform: rotate(180deg) scale(1.1);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+/* Content Area
+--------------------------------------------------------------------------------------------------------------- */
+.container {
+  padding: 80px 0;
+}
+
+/* Content */
+
+#gal {
+  font-size: 50px;
+  padding-top: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sectiontitle {
+  display: block;
+  max-width: 55%;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.sectiontitle * {
+  margin: 0;
+}
+
+.grid-3>li {
+  margin-bottom: 50px;
+}
+
+.grid-3>li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+/* Removes bottom margin from the last line of items - margin is restored in the media queries when items stack */
+.grid-3>li:nth-child(3n + 1) {
+  margin-left: 0;
+  clear: left;
+}
+
+/* Footer
+--------------------------------------------------------------------------------------------------------------- */
+#footer {
+  padding: 80px 0 50px;
+}
+
+#footer .heading {
+  margin-bottom: 50px;
+  font-size: 1.2rem;
+}
+
+#footer p+.faico {
+  margin-top: 30px;
+}
+
+#footer input,
+#footer button {
+  border: 2px solid;
+}
+
+#footer input {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+}
+
+#footer button {
+  padding: 10px 15px 12px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+#footer .linklist li {
+  display: block;
+  margin-bottom: 15px;
+  padding: 0 0 15px 0;
+  border-bottom: 1px solid;
+}
+
+#footer .linklist li:last-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+#footer .linklist li::before,
+#footer .linklist li::after {
+  display: table;
+  content: "";
+}
+
+#footer .linklist li,
+#footer .linklist li::after {
+  clear: both;
+}
+
+#footer .latestimg>li {
+  display: inline-block;
+
+  width: 30%;
+  margin: 0 0 5% 5%;
+}
+
+#footer .latestimg>li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+/* Removes bottom margin from the last three items - margin is restored in the media queries when items stack */
+#footer .latestimg>li:nth-child(3n + 1) {
+  margin-left: 0;
+  clear: left;
+}
+
+/* Removes the need to add class="first" */
+#footer .latestimg>li img {
+  width: 100%;
+}
+
+/* Force the image to resize to take the full space - may have to be changed for tablets, depends on personal preference */
+#footer .latestimg>li a.imgover {
+  display: block;
+}
+
+#footer nav {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#footer nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+#footer nav li:last-child {
+  margin-right: 0;
+}
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright {
+  padding: 50px 0 80px;
+  border-top: 1px solid;
+}
+
+#copyright * {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add roundness to certain items
+Settings are all different due to the optical similarity needed for different sized elements
+Delete this section if roundness is not wanted / required
+--------------------------------------------------------------------------------------------------------------- */
+.btn {
+  border-radius: 14px;
+}
+
+#footer input,
+#footer button {
+  border-radius: 12px;
+}
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul,
+nav ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#mainav,
+#breadcrumb,
+.sidebar nav {
+  line-height: normal;
+}
+
+#mainav .drop::after,
+#mainav li li .drop::after,
+#breadcrumb li a::after,
+.sidebar nav a::after {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+/* Top Navigation */
+
+#mainav ul {
+  text-transform: uppercase;
+}
+
+#mainav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mainav ul ul {
+  position: absolute;
+  width: 180px;
+  text-transform: none;
+  z-index: 9999;
+}
+
+#mainav ul ul ul {
+  left: 180px;
+  top: 0;
+}
+
+#mainav li {
+  display: inline-block;
+  position: relative;
+  margin: 0 15px 0 0;
+  padding: 0;
+  text-decoration: underline;
+}
+
+#mainav li:last-child {
+  margin-right: 0;
+}
+
+#mainav li li {
+  width: 100%;
+  margin: 0;
+}
+
+#mainav li a {
+  display: block;
+  padding: 30px 0;
+}
+
+#mainav li li a {
+  border: solid;
+  border-width: 0 0 1px 0;
+}
+
+#mainav .drop {
+  padding-left: 15px;
+}
+
+#mainav li li a,
+#mainav li li .drop {
+  display: block;
+  margin: 0;
+  padding: 10px 15px;
+  text-decoration: underline;
+}
+
+#mainav .drop::after,
+#mainav li li .drop::after {
+  content: "\f0d7";
+}
+
+#mainav .drop::after {
+  top: 35px;
+  left: 5px;
+}
+
+#mainav li li .drop::after {
+  top: 15px;
+  left: 5px;
+}
+
+#mainav ul ul {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#mainav ul li:hover>ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+#mainav form {
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#mainav form select,
+#mainav form select option {
+  display: block;
+  cursor: pointer;
+  outline: none;
+}
+
+#mainav form select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid;
+}
+
+#mainav form select option {
+  margin: 5px;
+  padding: 0;
+  border: none;
+}
+
+/* Tables
+--------------------------------------------------------------------------------------------------------------- */
+
+/* Style pour le tableau principal */
+.lien {
+  border-collapse: collapse;
+
+  width: 100%;
+}
+
+.lien td {
+  border: 5px solid black;
+
+  padding: 5px;
+
+  text-align: center;
+}
+
+.lien table {
+  border-collapse: collapse;
+
+  margin-top: 10px;
+
+  width: 100%;
+}
+
+.lien table td {
+  border: 1px solid black;
+
+  padding: 5px;
+
+  text-align: center;
+}
+
+.lien table tr:first-child td {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+table td,
+table th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+table th {
+  font-weight: bold;
+  text-align: center;
+}
+
+.lien {
+  margin-top: 30px;
+}
+
+.p {
+  color: #000000;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.semestre {
+  border-collapse: collapse;
+
+  width: 100%;
+  margin-top: 100px;
+}
+
+.semestre td {
+  border: 5px solid black;
+
+  padding: 5px;
+
+  text-align: center;
+}
+
+.semestre table {
+  border-collapse: collapse;
+
+  margin-top: 10px;
+
+  width: 100%;
+}
+
+.semestre table td {
+  border: 1px solid black;
+
+  padding: 5px;
+
+  text-align: center;
+}
+
+.semestre table tr:first-child td {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+table td,
+table th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+table th {
+  font-weight: bold;
+  text-align: center;
+}
+
+.semestere {
+  margin-top: 30px;
+}
+
+.p {
+  color: #000000;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Font Awesome Social Icons
+--------------------------------------------------------------------------------------------------------------- */
+.faico {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.faico li {
+  display: inline-block;
+  margin: 8px 5px 0 0;
+  padding: 0;
+  line-height: normal;
+}
+
+.faico li:last-child {
+  margin-right: 0;
+}
+
+.faico a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Colours
+--------------------------------------------------------------------------------------------------------------- */
+body {
+  background-color: #ffffff
+    /* Fallback incase a background image doesn't load */
+  ;
+}
+
+a {
+  color: #1e90ff;
+}
+
+a:active,
+a:focus {
+  background: transparent !important;
+}
+
+/* IE10 + 11 Bugfix - prevents grey background */
+hr,
+.borderedbox {
+  border-color: black;
+}
+
+.overlay {
+  color: #ffffff;
+  background-color: inherit;
+}
+
+.overlay::after {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.overlay.light {
+  color: #ffffff;
+}
+
+.overlay.light::after {
+  background-color: #ffffff;
+}
+
+.btn,
+.btn.inverse:hover {
+  color: gray;
+  background-color: #1e90ff;
+  border-color: #1e90ff;
+}
+
+.btn:hover,
+.btn.inverse {
+  color: inherit;
+  background-color: transparent;
+  border-color: inherit;
+}
+
+.imgover:hover::before {
+  background-color: rgba(142, 200, 55, 0.3);
+  /* #8EC837 */
+}
+
+.imgover,
+.imgover:hover::after {
+  color: #ffffff;
+}
+
+/* Rows */
+.row0,
+.row0 a {
+  color: white;
+  background-color: #1e90ff;
+}
+
+.row1 {
+  color: black;
+  background-color: #ffffff;
+}
+
+.row2 {
+  color: black;
+  background-color: #f4f4f4;
+}
+
+.row3 {
+  color: white;
+  background-color: #ffffff;
+}
+
+.row4 {
+  color: white;
+}
+
+.row5,
+.row5 a {
+  color: #ffffff;
+}
+
+/* Top Bar */
+#topbar>div:first-of-type i {
+  color: #000000;
+}
+
+#topbar #searchform {
+  color: inherit;
+}
+
+#topbar #searchform input {
+  color: #ffffff;
+  background: #000000;
+}
+
+#topbar #searchform button {
+  color: #ffffff;
+  background: transparent;
+}
+
+/* Contact Details */
+#ctdetails ul li div i {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+#ctdetails ul li div:hover i {
+  color: #ffffff;
+  background-color: #1e90ff;
+}
+
+/* Header */
+#header {
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
+#header #logo a {
+  color: inherit;
+}
+
+.img {
+  margin-bottom: 10px;
+}
+
+/* Content */
+#introblocks figure figcaption>a {
+  color: #ffffff;
+  background-color: #1e90ff;
+}
+
+/* Footer */
+#footer .heading {
+  color: #ffffff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#footer hr,
+#footer .borderedbox,
+#footer .linklist li {
+  border-color: black;
+}
+
+#footer input,
+#footer button {
+  border-color: transparent;
+}
+
+#footer input {
+  background-color: #ffffff;
+}
+
+#footer input:focus {
+  background-color: #1e90ff;
+}
+
+#footer textarea:focus {
+  background-color: #1e90ff;
+}
+
+#footer button {
+  color: #ffffff;
+  background-color: #1e90ff;
+}
+
+#footer button:hover {
+  color: inherit;
+  background-color: transparent;
+  border-color: inherit;
+}
+
+#footer nav a {
+  color: #ffffff;
+}
+
+#footer nav a:hover {
+  color: #1e90ff;
+}
+
+/* Copyright */
+#copyright {
+  border-color: black;
+}
+
+/* Navigation */
+#mainav li a {
+  color: black;
+}
+
+#mainav .active a,
+#mainav a:hover,
+#mainav li:hover>a {
+  color: #000000;
+  background-color: inherit;
+}
+
+#mainav li li a,
+#mainav .active li a {
+  color: #ffffff;
+  background-color: #1e90ff;
+  border-color: #1e90ff;
+  /* #8EC837 */
+}
+
+#mainav li li:hover>a,
+#mainav .active .active>a {
+  color: #ffffff;
+  background-color: #1e90ff;
+}
+
+#mainav form select {
+  color: black;
+  background-color: #ffffff;
+  border-color: #d7d7d7;
+}
+
+#breadcrumb * {
+  color: #ffffff;
+  background-color: inherit;
+}
+
+#breadcrumb li:last-child a {
+  color: #1e90ff;
+}
+
+#backtotop {
+  color: #ffffff;
+  background-color: #1e90ff;
+}
+
+/* Tables + Comments */
+table,
+th,
+td,
+#comments .avatar,
+#comments input,
+#comments textarea {
+  border-color: black;
+}
+
+th {
+  color: black;
+  background-color: #ffffff;
+}
+
+tr,
+#comments li,
+#comments input[type="submit"],
+#comments input[type="reset"] {
+  color: black;
+  background-color: #fbfbfb;
+}
+
+tr:nth-child(even),
+#comments li:nth-child(even) {
+  color: black;
+  background-color: white;
+}
+
+table a,
+#comments a {
+  background-color: black;
+}
+
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport {
+  width: device-width;
+}
+
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 1140px) {
+  .hoc {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (min-width: 978px) and (max-width: 1140px) {
+  .hoc {
+    max-width: 95%;
+  }
+}
+
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 978px) {
+  .hoc {
+    max-width: 90%;
+  }
+
+  #header {
+    padding: 30px;
+  }
+
+  #header #logo {
+    margin-top: 0;
+  }
+
+  #mainav ul {
+    display: none;
+  }
+
+  #mainav form {
+    display: block;
+    margin-top: 2px;
+  }
+
+  #copyright p:first-of-type {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  .imgl,
+  .imgr {
+    display: inline-block;
+    float: none;
+    margin: 0 0 10px 0;
+  }
+
+  .fl_left,
+  .fl_right {
+    display: block;
+    float: none;
+  }
+
+  .one_half,
+  .one_third,
+  .two_third,
+  .one_quarter,
+  .two_quarter,
+  .three_quarter {
+    display: block;
+    float: none;
+    width: auto;
+    margin: 0 0 30px 0;
+  }
+
+  .last,
+  .group .group>*:last-child,
+  .clear .clear>*:last-child,
+  .clear .group>*:last-child,
+  .group .clear>*:last-child {
+    margin-bottom: 0;
+  }
+
+  /* Experimental - Needs more testing in different situations, stops double margin when stacking */
+
+  #topbar {
+    text-align: center;
+  }
+
+  #topbar>div:first-of-type {
+    margin-bottom: 15px;
+  }
+
+  #topbar #searchform {
+    display: none;
+  }
+
+  /* If it's required you will have to modify the CSS to display it correctly - personal preference */
+
+  #header {
+    text-align: center;
+  }
+
+  #header #logo {
+    margin: 0 0 15px 0;
+  }
+
+  #pageintro article {
+    max-width: none;
+  }
+
+  #pageintro .heading {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+
+  .sectiontitle {
+    max-width: none;
+  }
+
+  .sd-third>li,
+  .grid-3 {
+    max-width: 348px;
+  }
+
+  /* Restrict the width to the one_third grid element in smaller devices */
+  .grid-3 {
+    margin: 0 auto;
+  }
+
+  .grid-3>li:nth-last-child(-n + 3) {
+    margin-bottom: 50px;
+  }
+
+  .grid-3>li:last-child {
+    margin-bottom: 0;
+  }
+
+  #latest>li {
+    margin: 0 auto 50px;
+  }
+
+  #footer .latestimg>li,
+  #footer .latestimg>li:nth-last-child(-n + 3) {
+    display: inline-block;
+    float: none;
+    width: auto;
+    margin: 0 5% 5% 0;
+  }
+
+  #footer .latestimg>li:last-child {
+    margin-bottom: 0;
+  }
+
+  #footer .latestimg>li img {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #topbar>div:first-of-type>ul li {
+    display: block;
+    margin-right: 0;
+  }
+}
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 650px) {
+  .scrollable {
+    display: block;
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 0 0 15px 0;
+    overflow: auto;
+    overflow-x: scroll;
+  }
+
+  .scrollable table {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+  }
+
+  .inline li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .pushright li {
+    margin-right: 0;
+  }
+
+  .font-x2 {
+    font-size: 1.6rem;
+  }
+
+  .font-x3 {
+    font-size: 1.8rem;
+  }
+}

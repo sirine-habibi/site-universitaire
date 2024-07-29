@@ -1,0 +1,38 @@
+#main {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#main h4 {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.button {
+    display: flex;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    transform: skew(-20deg);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    text-align: center;
+
+
+
+}
+
+.button:hover {
+
+    transform: skew(-20deg) scale(1.1);
+    background-color: #ddd;
+    color: #555;
+
+}
